@@ -1,0 +1,31 @@
+באמצעות props
+אפשר להעביר נתונים
+כלומר מעבירים פרמטרים באמצאות התכונות 
+attributes of HTML tags
+
+ככה מעבירים את האובייקט
+API
+לקומפוננטה
+ const user = {
+    name: 'Moshe',
+    lastName:'Horvitz',
+    age: 10,
+    }
+
+זה בדף הראשי <SendObject user={user}/>
+
+וככה מקבלים את ה
+API
+בקומפוננטה
+
+זה נקרא 
+destructuring
+
+function SendObject(props) {
+    const { age, name,lastName } = props.user;
+    return (
+    <span>Happy Birthday {name} {lastName}! You are {age} years old!!</span>
+    );
+    }
+    export default SendObject;
+    101
