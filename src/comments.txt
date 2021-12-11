@@ -28,4 +28,11 @@ function SendObject(props) {
     );
     }
     export default SendObject;
-    101
+   
+   סטייט
+   כדי שנוכל לעבוד עם קומפונטות שמכילות פונקציות שצריכות זיכרון בקומפוננטה
+   משתמשים במשהוא שנקרא הוק 
+   hooks
+   וככה מייבאים אותו ספציפית
+   import React, { useState } from 'react';
+   
