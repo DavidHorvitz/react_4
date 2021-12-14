@@ -1,9 +1,9 @@
 באמצעות props
 אפשר להעביר נתונים
-כלומר מעבירים פרמטרים באמצאות התכונות 
+כלומר מעבירים פרמטרים באמצעות התכונות 
 attributes of HTML tags
 
-ככה מעבירים את האובייקט
+ ככה מעבירים את האובייקט ב
 API
 לקומפוננטה
  const user = {
@@ -33,6 +33,27 @@ function SendObject(props) {
    כדי שנוכל לעבוד עם קומפונטות שמכילות פונקציות שצריכות זיכרון בקומפוננטה
    משתמשים במשהוא שנקרא הוק 
    hooks
-   וככה מייבאים אותו ספציפית
+   וככה מייבאים אותו ספציפית ועל הדרך משתמשים ב
+   props
+
    import React, { useState } from 'react';
+function CountDown(props) {
+const [count, setCount] = useState(props.time);
+function countUp() {
+if (count > 0) {
+setCount(count - 1);
+}
+}
+return (
+<div>
+<h2>{count}</h2>
+<button onClick={countUp}>Clck me</button>
+</div>
+);
+}
+export default CountDown;
+ בדף הראשי
+<CountDown time="3" />
+
+   121 page
    

@@ -1,0 +1,24 @@
+#showOver{
+    background-color: aliceblue;
+    /* height: 30px; */
+    width: 100px;
+    color: brown;
+    font-size:large;
+    font-style: italic;
+}
+#showDown{
+    background-color: rgb(191, 212, 230);
+    /* height: 30px; */
+    width: 100px;
+    color: rgb(4, 99, 4);
+    font-size: large;
+    font-style: italic;
+}
+#show_z{
+    background-color: aliceblue;
+    /* height: 30px; */
+    width: 100px;
+    color: brown;
+    font-size:large;
+    font-style: italic;
+}

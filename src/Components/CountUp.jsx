@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+// without useState function
 // function CountButton(){
 //    const count = 0;
 
@@ -17,6 +18,7 @@ import React, { useState } from "react";
 function CountButton() {
     const [count, setCount] = useState(0);
     function countUp() {
+        
         setCount(count + 1);
     }
     function countDown() {
